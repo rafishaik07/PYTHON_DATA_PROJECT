@@ -35,3 +35,36 @@ plt.show()
 - Data Engineers require cloud platform knowledge (AWS, Azure) and big data tools (Spark).
 
 - Data Scientists need expertise in statistical analysis (R, SAS) and visualization tools (Tableau).
+
+## 2. How are in-demand skills trending for Data Analysts?
+
+### Visualize Data
+
+```python
+from matplotlib.ticker import PercentFormatter
+
+df_plot = df_DA_US_percent.iloc[:,:5]
+sns.lineplot(data=df_plot, dashes=False, palette='tab10')
+
+plt.gca().yaxis.set_major_formatter(PercentFormatter(decimals=0))
+
+plt.show()
+
+```
+
+### Results
+
+![Trending Top Skills for Data Analysts in the US](
+3_Project\images\skill_trend_DA.png)
+
+*Bar graph visualizing the trending top skills for Data Analysts in the US in 2023.*
+
+### Insights
+
+- SQL remains the most consistently demanded skill throughout the year, though it shows a gradual decline from January to November before a slight rebound in December.
+
+- Excel shows a significant increase in demand starting around September, eventually surpassing Python and Tableau by the end of the year.
+
+- Python and Tableau demonstrate relatively stable trends with minor fluctuations, highlighting their continued relevance for data analysts despite not being the top-most skills.
+
+- SAS maintains the lowest demand throughout the year, showing only slight movement—suggesting it is increasingly niche or industry-specific.
